@@ -33,7 +33,7 @@ function PostTweet() {
       image: tweetImgUrlCheck && tweetImgUrl,
       avatar: tweetAvatarUrlCheck
         ? tweetAvatarUrl
-        : "/photo_2021-11-25_18-59-31.jpg",
+        : "./photo_2021-11-25_18-59-31.jpg",
     };
 
     showPostedMessage(true);
