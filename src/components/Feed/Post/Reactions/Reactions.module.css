@@ -1,0 +1,78 @@
+.icon {
+  display: flex;
+  align-items: center;
+  color: rgb(87, 83, 83);
+  cursor: pointer;
+  transition: color 0.2s ease;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.icon:hover {
+  color: var(--twitter-color);
+}
+
+.icon:nth-child(2):hover {
+  color: rgb(116, 189, 128);
+}
+
+.icon:nth-child(3):hover {
+  color: #f91a81;
+}
+
+.svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.4s ease;
+}
+
+.svg > svg {
+  width: 18px;
+  height: 18px;
+}
+
+.icon:hover .svg {
+  background-color: rgb(235, 226, 226);
+}
+
+.number {
+  margin-left: 2px;
+  font-size: 16px;
+}
+
+@media (max-width: 500px) {
+  .svg {
+    padding: 0;
+    position: relative;
+    z-index: 20;
+  }
+  .svg > svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .icon > .svg::before {
+    content: "";
+    position: absolute;
+    top: -25%;
+    left: -25%;
+    width: 150%;
+    height: 150%;
+    border-radius: 50%;
+    z-index: -20;
+    transition: background-color 0.4s ease;
+  }
+
+  .icon:hover .svg::before {
+    background-color: rgb(235, 226, 226);
+  }
+
+  .number {
+    margin-left: 1px;
+    font-size: 14px;
+    z-index: 20;
+  }
+}

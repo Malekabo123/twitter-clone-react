@@ -1,0 +1,30 @@
+.sidebarElement {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebarElement > .icon {
+  padding: 1rem;
+}
+
+.sidebarElementText {
+  margin-right: 1rem;
+}
+
+.sidebarElement:hover {
+  background-color: #e8f5fe;
+  border-radius: 2rem;
+  color: var(--twitter-color);
+  transition: color 100ms ease-out;
+}
+
+.active {
+  color: var(--twitter-color);
+}
+
+@media (max-width: 1050px) {
+  .sidebarElementText {
+    display: none;
+  }
+}

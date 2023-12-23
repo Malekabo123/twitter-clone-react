@@ -1,0 +1,29 @@
+.message {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgb(245, 241, 241, 0.9);
+  padding: 1rem 4rem;
+  margin-top: 10px;
+  box-shadow: 0 7px 26px -13px rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+  z-index: 600;
+  white-space: nowrap;
+  animation: fadeInOut 4.1s linear;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

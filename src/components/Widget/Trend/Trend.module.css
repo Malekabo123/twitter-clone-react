@@ -1,0 +1,23 @@
+.trend {
+  padding: 0.5rem 1rem;
+}
+
+.trend:last-child {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding-bottom: 1.5rem;
+}
+
+.trend:hover {
+  background-color: #d7dde0;
+  cursor: pointer;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.where,
+.posts {
+  font-size: 0.9rem;
+}

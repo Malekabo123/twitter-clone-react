@@ -1,0 +1,73 @@
+.post {
+  display: flex;
+  padding: 1rem;
+  max-width: 50vw;
+  border-bottom: 1px solid var(--twitter-background);
+  transition: background-color 0.2s ease;
+}
+
+.post:hover {
+  cursor: pointer;
+  background-color: rgb(247, 241, 241);
+}
+
+.postContainer {
+  flex: 1;
+}
+
+.post > div:first-child {
+  margin-right: 1rem;
+}
+
+.namesRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.namesRow > svg {
+  color: var(--twitter-color);
+  font-size: 25px;
+  margin-right: 0.5rem;
+  margin-left: 0.3rem;
+}
+
+.greyHeaderContainer {
+  display: flex;
+}
+
+.namesRow > h3,
+.greyHeaderContainer > p:last-child {
+  white-space: nowrap;
+}
+
+.greyHeader {
+  color: rgb(143 137 137);
+}
+
+.greyHeader:last-of-type {
+  padding-left: 5px;
+}
+
+.postImg {
+  border-radius: 20px;
+  margin-top: 1rem;
+}
+
+.reactions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1050px) {
+  .post {
+    max-width: 70vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .post {
+    max-width: 100%;
+  }
+}
