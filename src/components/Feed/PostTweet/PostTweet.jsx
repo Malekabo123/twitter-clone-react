@@ -50,7 +50,7 @@ function PostTweet() {
     <div className={styles.tweetPosting}>
       <form onSubmit={submitHandler}>
         <div className={styles.tweetBox}>
-          <Avatar src="./photo_2021-11-25_18-59-31.jpg" alt="profile_photo" />
+          <Avatar src="./photo_2021-11-25_18-59-31.jpg" />
           <input
             className={styles.tweetText}
             type="text"
