@@ -5,6 +5,7 @@ import ImageOutlinedIcon from "@mui/icons-material/ImageOutlined";
 import db from "../../Firebase";
 import { collection, addDoc } from "firebase/firestore";
 import PostedMessage from "../PostedMessage/PostedMessage";
+import { TextareaAutosize } from "@mui/base/TextareaAutosize";
 
 function PostTweet() {
   const [tweetText, setTweetText] = useState("");
@@ -51,9 +52,10 @@ function PostTweet() {
       <form onSubmit={submitHandler}>
         <div className={styles.tweetBox}>
           <Avatar src="./photo_2021-11-25_18-59-31.jpg" />
-          <input
+          <TextareaAutosize
             className={styles.tweetText}
-            type="text"
+            // type="text"
+            maxRows={6}
             placeholder="What is happening?!"
             value={tweetText}
             onChange={(e) => setTweetText(e.target.value)}
